@@ -17,8 +17,8 @@ RUN \
   apt-get -y clean autoclean autoremove && \
   rm -rf /var/lib/{apt,dpkg,cache,log}/
 
-RUN mkdir /build
-WORKDIR /build
+RUN mkdir /build/ps3toolchain
+WORKDIR /build/ps3toolchain
 # COPY . /build
 
 # Fixes certificate errors with letsencrypt in ARMv7
