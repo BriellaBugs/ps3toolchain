@@ -10,7 +10,7 @@ Currently I have fixed a few broken links in the libraries and un-commented the 
 
 ### Dependencies
 
-As far as I'm aware only [Docker](https://www.docker.com/) is needed, everything else is handled inside the instance.
+As far as I'm aware only [Docker](https://www.docker.com/) is needed, everything else is handled inside the docker container.
 
 ### How to install
 
@@ -22,4 +22,6 @@ cd ps3toolchain
 docker build -t ps3toolchain .
 ```
 
-The toolchain script will run during the docker build, if you don't want this, comment out `RUN /build/toolchain.sh` at the end of the `Dockerfile`, note that you will have to run it yourself on an interactive shell or similar if you want it to work.
+The toolchain script will run during the docker build automatically.
+
+If you don't want this, comment out `RUN /build/toolchain.sh` at the end of the `Dockerfile`
