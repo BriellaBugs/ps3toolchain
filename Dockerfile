@@ -17,7 +17,7 @@ RUN \
   apt-get -y clean autoclean autoremove && \
   rm -rf /var/lib/{apt,dpkg,cache,log}/
 
-RUN mkdir /build/ps3toolchain
+RUN mkdir -p /build/ps3toolchain
 WORKDIR /build/ps3toolchain
 # COPY . /build
 
