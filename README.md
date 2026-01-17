@@ -20,6 +20,15 @@ Run these commands
 git clone https://github.com/BriellaBugs/ps3toolchain
 cd ps3toolchain
 docker build -t ps3toolchain .
+docker run -it -v "$PWD":/build ps3toolchain ## Enter the docker instance
+```
+```bash
+./toolchain.sh
 ```
 
-The toolchain script will run during the docker build automatically. If you don't want this, comment out `RUN /build/toolchain.sh` at the end of the `Dockerfile`.
+### How to run
+
+```bash
+cd /path/to/your/ps3toolchain/git/clone
+docker run -it -v "$PWD":/build ps3toolchain 
+```
