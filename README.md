@@ -6,13 +6,11 @@ I mostly just made this to fix issues I find without pushing to the main repo, a
 
 Currently I have fixed a few broken links in the libraries and un-commented the build script auto-run line.
 
-## How to use
-
-### Dependencies
+## Dependencies
 
 As far as I'm aware only [Docker](https://www.docker.com/) is needed, everything else is handled inside the Docker container.
 
-### How to install
+## How to install
 
 Run these commands
 
@@ -20,15 +18,15 @@ Run these commands
 git clone https://github.com/BriellaBugs/ps3toolchain
 cd ps3toolchain
 docker build -t ps3toolchain .
-docker run -it -v "$PWD":/build ps3toolchain ## Enter the docker instance
+docker run -it --rm -v "$PWD":/build ps3toolchain ## Enter the docker instance
 ```
 ```bash
 ./toolchain.sh
 ```
 
-### How to run
+## How to run
 
 ```bash
 cd /path/to/your/ps3toolchain/git/clone
-docker run -it -v "$PWD":/build ps3toolchain 
+docker run -it --rm -v "$PWD":/build ps3toolchain 
 ```
