@@ -18,12 +18,6 @@ Run these commands
 git clone https://github.com/BriellaBugs/ps3toolchain
 cd ps3toolchain
 docker build -t ps3toolchain .
-docker run -it --rm -v "$PWD"/..:/build ps3toolchain # Enter the docker instance
-```
-Inside the docker instance:
-```bash
-./toolchain.sh
-exit
 ```
 
 ## How to run
@@ -31,4 +25,7 @@ exit
 ```bash
 cd /path/to/ps3toolchain.git/
 docker run -it --rm -v "$PWD"/..:/build ps3toolchain
+./toolchain.sh
+# Use the toolchain for whatever here
+exit
 ```
