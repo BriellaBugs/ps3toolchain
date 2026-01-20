@@ -2,9 +2,7 @@
 
 This is a fork of [ps3dev/ps3toolchain](https://github.com/ps3dev/ps3toolchain)
 
-I mostly just made this to fix issues I find without pushing to the main repo, as nobody seems to be responding there anymore.
-
-Currently I have fixed a few broken links in the libraries and un-commented the build script auto-run line.
+This fixes any broken links I found and provides instructions on how to setup the toolchain inside Docker
 
 ## Dependencies
 
